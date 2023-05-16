@@ -1,0 +1,188 @@
+:root {
+    --bg-color: #230e28;
+    --main-color: white;
+    --accent-color: #7ed957;
+}
+
+body * {
+    display: flex;
+}
+
+html, body {
+    font-family: Verdana;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    justify-content: space-between;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* #region navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+menu {
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+#menu-button {
+    height: 50px;
+    width: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border-radius: 10px;
+    border: none;
+}
+
+/* making the lines that compounds the menu button */
+#menu-button * {
+    width: 80%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+#menu-button:hover {
+    background-color: rgba(127,127,127,0.5);
+    cursor: pointer;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin: 0 20px;
+}
+
+#logo span:nth-child(1) {
+    color: var(--main-color);;
+    font-weight: 400;
+}
+
+#logo span:nth-child(2) {
+    color: var(--accent-color);
+    font-weight: 100;
+}
+
+.navbar ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar li {
+    height: 60%;
+    width: 100px;
+    padding: 0px 10px;
+    margin: 0% 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.navbar li:hover {
+    background-color: rgba(127,127,127,0.2);
+    text-decoration:underline;
+}
+
+/* #endregion navbar */
+
+.loginForm {
+    font-size: 16px;
+    height: 50%;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    justify-content: center;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+}
+
+.form {
+    color: var(--accent-color);
+    width: 100%;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-right: solid 1px;
+    border: 1px solid transparent;
+    box-shadow: -2px -2px 5px rgba(127,127,127,0.5);
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form * {
+    margin: 0 auto;
+}
+
+.form legend {
+    font-size: 150%;
+}
+
+.input {
+    flex-direction: column;
+    width: 75%;
+}
+
+.input label {
+    margin: 10px;
+}
+
+.login-button {
+    aspect-ratio: 16/9;
+    width: 40%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    backdrop-filter: blur(100px);
+}
+
+input {
+    color: white;
+    font-size: 100%;
+    background: rgba(127,127,127,0.2);
+    border-style: none none solid none;
+    height: 35px;
+    width: 100%;
+}
+
+#calculatorForm {
+    height: 70%;
+    aspect-ratio: 4/3;
+}
+
+@keyframes Form {
+    0% {
+        height: 0%;
+        width: 0%;
+    }
+}
